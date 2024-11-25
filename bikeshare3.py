@@ -178,9 +178,9 @@ def descr_stats(df):
     # Now ask the user if they want to see raw data
     start_index = 0
     while True:
-        user_input = input("Do you want to see 5 lines of raw data? yes or no: ").strip().lower()
+        user_input = input("Do you want to see 5 lines of raw data? (Y/N): ").strip().lower()
         
-        if user_input == 'yes':
+        if user_input == 'y':
             # Display the next 5 lines of raw data
             print(df.iloc[start_index:start_index + 5])
             start_index += 5  # Move to the next set of 5 lines
@@ -189,11 +189,11 @@ def descr_stats(df):
             if start_index >= len(df):
                 print("No more raw data to display.")
                 break  # Exit the loop if there are no more lines
-        elif user_input == 'no':
+        elif user_input == 'n':
             print("Okay, not displaying more raw data.")
             break  # Exit the loop if the user says no
         else:
-            print("Invalid input. Please enter 'yes' or 'no'.")
+            print("Invalid input. Please enter (Y/N).")
 
     
 
