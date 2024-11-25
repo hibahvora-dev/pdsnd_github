@@ -7,7 +7,7 @@
 
 
 ### Description
-this is my bikeshare project
+This is my bikeshare project.
 
 ### Files used
 - newyorkcity.csv
@@ -16,4 +16,4 @@ this is my bikeshare project
 - washington.csv
 
 ### Credits
-this is all forked from [Udacity](https://github.com/udacity/pdsnd_github)
+This is all forked from [Udacity](https://github.com/udacity/pdsnd_github).

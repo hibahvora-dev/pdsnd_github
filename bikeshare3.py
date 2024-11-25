@@ -8,7 +8,8 @@ Created on Sun Nov 17 16:23:14 2024
 
 
 import time
-import pandas as pd
+# Pandas organizes data tables and allows us to manipulate them to find insights
+import pandas as pd 
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
