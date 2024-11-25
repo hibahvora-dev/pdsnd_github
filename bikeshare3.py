@@ -163,16 +163,16 @@ def user_stats(df):
     
 def descr_stats(df):
     # Ask the user if they want to see descriptive statistics
-    user_input = input("Do you want to see descriptive statistics? yes or no: ").strip().lower()
+    user_input = input("Do you want to see descriptive statistics? (Y/N): ").strip().lower()
     
     # Check the user's response
-    if user_input == 'yes':
+    if user_input == 'y':
         # Display the descriptive statistics
         print(df.describe())
-    elif user_input == 'no':
+    elif user_input == 'n':
         print("Okay, not displaying the statistics.")
     else:
-        print("Invalid input. Please enter 'yes' or 'no'.")
+        print("Invalid input. Please enter (Y/N).")
         return  # Exit the function if the input is invalid
 
     # Now ask the user if they want to see raw data
